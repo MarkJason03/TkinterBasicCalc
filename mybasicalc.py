@@ -101,11 +101,11 @@ class Calculator:
         self.operator = self.operator + str(no)  # Empty string  is concatinated with the input
         self.calculate_var.set(self.operator)
 
-    def calculation(self):
+    def calculation(self): # Eval function calculates the input digits
         total = str(eval(self.operator))  # calculate whatever input is gathered by the empty string
         self.calculate_var.set(total)
 
-    def clear(self):
+    def clear(self): #Deleting the evaluated strings and returning it back to 0 for new values to be evaluated
         self.operator = ""
         self.calculate_var.set("")
 
